@@ -1,0 +1,111 @@
+services:
+  # ─────────────── Data stores ───────────────
+  postgis:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-parcel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_me}
+      POSTGRES_DB: ${POSTGRES_DB:-parcelai}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-parcel} -d ${POSTGRES_DB:-parcelai}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ─────────────── Tile servers ───────────────
+  titiler:
+    image: ghcr.io/developmentseed/titiler:latest
+    environment:
+      - PORT=8000
+      - TITILER_API_CORS_ORIGINS=http://localhost:5173
+    ports:
+      - "8080:8000"
+    restart: unless-stopped
+    volumes:
+      - data_vol:/data:ro
+
+  martin:
+    image: ghcr.io/maplibre/martin:latest
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-parcel}:${POSTGRES_PASSWORD:-change_me}@postgis:5432/${POSTGRES_DB:-parcelai}
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    depends_on:
+      postgis:
+        condition: service_healthy
+
+  # ─────────────── Backend ───────────────
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - data_vol:/data
+    restart: unless-stopped
+    depends_on:
+      postgis:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: celery -A app.workers.celery_app worker --loglevel=info --concurrency=2
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app
+      - data_vol:/data
+    restart: unless-stopped
+    depends_on:
+      postgis:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # ─────────────── Frontend ───────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    env_file:
+      - ./frontend/.env
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  data_vol:

@@ -1,0 +1,121 @@
+{
+  "app_title": "पार्सलएआई (ParcelAI)",
+  "app_subtitle": "एआई-आधारित स्वचालित भू-पार्सल मानचित्रण",
+  "preliminary_warning": "प्रारंभिक परिणाम — केवल क्षेत्रीय सत्यापन के अधीन, कानूनी उपयोग के लिए मान्य नहीं।",
+  "system_status": "सिस्टम स्थिति",
+  "api_unreachable": "एपीआई उपलब्ध नहीं",
+  "navigation": {
+    "layers": "परतें (Layers)",
+    "issues": "त्रुटियां (Issues)",
+    "review_queue": "समीक्षा कतार",
+    "stats": "आंकड़े व विश्लेषण",
+    "compare": "जीआईएस तुलना",
+    "accuracy": "सटीकता (Accuracy)",
+    "context": "जीईई संदर्भ (GEE)",
+    "upload": "अपलोड व रन",
+    "export": "निर्यात (Export)"
+  },
+  "layers": {
+    "title": "मानचित्र परत प्रबंधन",
+    "basemap": "आधार मानचित्र",
+    "drone_rasters": "ड्रोन इमेजरी व ऊंचाई",
+    "ai_vectors": "एआई द्वारा निकाले गए फीचर्स",
+    "cadastral_rules": "भू-माप नियम व टोपोलॉजी",
+    "ground_truth": "ग्राउंड ट्रुथ व जीएनएसएस",
+    "context": "गूगल अर्थ इंजन संदर्भ",
+    "opacity": "पारदर्शिता (Opacity)",
+    "terrain_3d": "3D भू-भाग (Terrain)"
+  },
+  "issues": {
+    "title": "टोपोलॉजी सत्यापन व अतिक्रमण",
+    "found": "पहचानी गई समस्याएं",
+    "autofix": "स्वतः टोपोलॉजी सुधार",
+    "filter_all": "सभी",
+    "filter_error": "गंभीर त्रुटियां",
+    "filter_warning": "चेतावनियां",
+    "filter_info": "सूचनाएं",
+    "resolved": "हल किया गया",
+    "unresolved": "अनलिखित",
+    "mark_resolved": "हल चिह्नित करें",
+    "reopen": "पुनः खोलें",
+    "suggested_fix": "सुझाया गया सुधार",
+    "zoom_to": "ज़ूम करें"
+  },
+  "review": {
+    "title": "पार्सल समीक्षा कतार",
+    "desc": "समीक्षक द्वारा सत्यापन हेतु कम विश्वास स्तर से क्रमबद्ध पार्सल।",
+    "confidence": "विश्वास स्कोर",
+    "area": "क्षेत्रफल",
+    "status": "स्थिति",
+    "source": "स्रोत",
+    "verify": "सत्यापित करें",
+    "flag_edit": "संपादन हेतु चिह्नित करें",
+    "inspect": "निरीक्षण"
+  },
+  "stats": {
+    "title": "भू-मापन सर्वेक्षण विश्लेषण",
+    "total_parcels": "कुल पार्सल",
+    "total_area": "कुल क्षेत्रफल",
+    "mean_confidence": "औसत विश्वास स्कोर",
+    "buildings_detected": "भवन",
+    "roads_detected": "सड़क नेटवर्क",
+    "landuse_distribution": "भूमि-उपयोग वर्गीकरण",
+    "confidence_distribution": "विश्वास हिस्टोग्राम"
+  },
+  "compare": {
+    "title": "मौजूदा भू-अभिलेख से तुलना",
+    "matched": "समान",
+    "changed": "परिवर्तित",
+    "new": "नया (केवल एआई)",
+    "missing": "अनुपस्थित (केवल जीआईएस)",
+    "swipe_toggle": "स्वाइप पर्दा टॉगल करें",
+    "iou": "आईओयू (IoU)",
+    "area_diff": "क्षेत्रफल अंतर",
+    "displacement": "विस्थापन"
+  },
+  "accuracy": {
+    "title": "स्थानिक एवं बहुभुज सटीकता",
+    "gnss_rmse": "जीएनएसएस आरएमएसई (RMSE)",
+    "mean_horizontal_error": "औसत क्षैतिज त्रुटि",
+    "building_iou": "भवन पदचिह्न IoU",
+    "building_f1": "भवन F1 स्कोर",
+    "parcel_iou": "पार्सल बहुभुज IoU",
+    "parcel_f1": "पार्सल F1 स्कोर",
+    "correct_parcels": "1-से-1 सही",
+    "merged_parcels": "विलय किए गए",
+    "split_parcels": "विभाजित खंड"
+  },
+  "context": {
+    "title": "गूगल अर्थ इंजन सार्वजनिक संदर्भ",
+    "status": "जीईई स्थिति",
+    "enabled": "सक्रिय",
+    "disabled": "कॉन्फ़िगर नहीं",
+    "open_buildings": "गूगल ओपन बिल्डिंग्स बेंचमार्क",
+    "dynamic_world": "डायनामिक वर्ल्ड 10मी पूर्व अनुमान",
+    "sentinel_composite": "सेंटिनल-2 समग्र चित्र"
+  },
+  "upload": {
+    "title": "परियोजना डेटा व रन",
+    "select_project": "परियोजना चुनें",
+    "create_project": "नई परियोजना बनाएं",
+    "project_name": "परियोजना का नाम",
+    "crs": "प्रोजेक्शन (CRS)",
+    "ori_label": "ऑर्थोरेक्टिफाइड इमेजरी (ORI GeoTIFF)",
+    "dsm_label": "डिजिटल सतह मॉडल (DSM GeoTIFF)",
+    "dtm_label": "डिजिटल टेरेन मॉडल (DTM GeoTIFF - वैकल्पिक)",
+    "parcels_label": "मौजूदा पार्सल (वैकल्पिक)",
+    "gt_label": "जीएनएसएस चेकपॉइंट (वैकल्पिक)",
+    "upload_btn": "अपलोड व तैयार करें",
+    "run_pipeline": "एआई पाइपलाइन चलाएं",
+    "pipeline_running": "ड्रोन डेटा प्रोसेस हो रहा है..."
+  },
+  "export": {
+    "title": "जीआईएस निर्यात व सर्वेक्षण रिपोर्ट",
+    "geojson": "जियोजेसन डेटासेट (.geojson)",
+    "gpkg": "जियोपैकेज (.gpkg)",
+    "shp": "शेपफाइल बंडल (.zip)",
+    "kml": "गूगल अर्थ केएमएल (.kml)",
+    "pdf_report": "आधिकारिक पीडीएफ सर्वेक्षण रिपोर्ट",
+    "download": "डाउनलोड करें"
+  }
+}

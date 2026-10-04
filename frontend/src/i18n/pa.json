@@ -1,0 +1,121 @@
+{
+  "app_title": "ਪਾਰਸਲਏਆਈ (ParcelAI)",
+  "app_subtitle": "ਏਆਈ-ਅਧਾਰਿਤ ਸਵੈਚਾਲਿਤ ਜ਼ਮੀਨੀ ਪਾਰਸਲ ਮੈਪਿੰਗ",
+  "preliminary_warning": "ਮੁੱਢਲਾ ਨਤੀਜਾ — ਕੇਵਲ ਫੀਲਡ ਪੜਤਾਲ ਦੇ ਅਧੀਨ, ਕਾਨੂੰਨੀ ਜਾਂ ਰਜਿਸਟਰੀ ਮਕਸਦਾਂ ਲਈ ਯੋਗ ਨਹੀਂ।",
+  "system_status": "ਸਿਸਟਮ ਸਥਿਤੀ",
+  "api_unreachable": "API ਉਪਲਬਧ ਨਹੀਂ",
+  "navigation": {
+    "layers": "ਤਹਾਂ (Layers)",
+    "issues": "ਖ਼ਾਮੀਆਂ (Issues)",
+    "review_queue": "ਸਮੀਖਿਆ ਕਤਾਰ",
+    "stats": "ਅੰਕੜੇ ਤੇ ਵਿਸ਼ਲੇਸ਼ਣ",
+    "compare": "GIS ਤੁਲਨਾ",
+    "accuracy": "ਸ਼ੁੱਧਤਾ (Accuracy)",
+    "context": "GEE ਸੰਦਰਭ",
+    "upload": "ਅੱਪਲੋਡ ਤੇ ਰਨ",
+    "export": "ਨਿਰਯਾਤ (Export)"
+  },
+  "layers": {
+    "title": "ਨਕਸ਼ਾ ਤਹਾਂ ਪ੍ਰਬੰਧਨ",
+    "basemap": "ਅਧਾਰ ਨਕਸ਼ਾ",
+    "drone_rasters": "ਡਰੋਨ ਇਮੇਜਰੀ ਤੇ ਉਚਾਈ",
+    "ai_vectors": "ਏਆਈ ਰਾਹੀਂ ਕੱਢੇ ਫੀਚਰ",
+    "cadastral_rules": "ਜ਼ਮੀਨੀ ਨਿਯਮ ਤੇ ਟੋਪੋਲੋਜੀ",
+    "ground_truth": "ਗਰਾਊਂਡ ਟਰੂਥ ਤੇ GNSS",
+    "context": "ਗੂਗਲ ਅਰਥ ਇੰਜਣ ਸੰਦਰਭ",
+    "opacity": "ਪਾਰਦਰਸ਼ਤਾ (Opacity)",
+    "terrain_3d": "3D ਜ਼ਮੀਨੀ ਢਲਾਣ"
+  },
+  "issues": {
+    "title": "ਟੋਪੋਲੋਜੀ ਪੜਤਾਲ ਤੇ ਕਬਜ਼ੇ",
+    "found": "ਲੱਭੀਆਂ ਖ਼ਾਮੀਆਂ",
+    "autofix": "ਸਵੈ-ਚਾਲਿਤ ਸੁਧਾਰ",
+    "filter_all": "ਸਾਰੇ",
+    "filter_error": "ਗੰਭੀਰ ਗ਼ਲਤੀਆਂ",
+    "filter_warning": "ਚੇਤਾਵਨੀਆਂ",
+    "filter_info": "ਜਾਣਕਾਰੀ",
+    "resolved": "ਹੱਲ ਕੀਤੇ",
+    "unresolved": "ਅਣਸੁਲਝੇ",
+    "mark_resolved": "ਹੱਲ ਨਿਸ਼ਾਨਬੱਧ ਕਰੋ",
+    "reopen": "ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ",
+    "suggested_fix": "ਸੁਝਾਇਆ ਸੁਧਾਰ",
+    "zoom_to": "ਜ਼ੂਮ ਕਰੋ"
+  },
+  "review": {
+    "title": "ਪਾਰਸਲ ਸਮੀਖਿਆ ਕਤਾਰ",
+    "desc": "ਘੱਟ ਭਰੋਸੇਯੋਗਤਾ ਅਨੁਸਾਰ ਤਰਤੀਬਬੱਧ ਪਾਰਸਲ ਜਾਂਚ ਲਈ।",
+    "confidence": "ਭਰੋਸਾ ਸਕੋਰ",
+    "area": "ਰਕਬਾ",
+    "status": "ਸਥਿਤੀ",
+    "source": "ਸਰੋਤ",
+    "verify": "ਤਸਦੀਕ ਕਰੋ",
+    "flag_edit": "ਸੋਧ ਲਈ ਨਿਸ਼ਾਨ ਲਗਾਓ",
+    "inspect": "ਵੇਖੋ"
+  },
+  "stats": {
+    "title": "ਮਾਲੀਆ ਸਰਵੇਖਣ ਵਿਸ਼ਲੇਸ਼ਣ",
+    "total_parcels": "ਕੁੱਲ ਪਾਰਸਲ",
+    "total_area": "ਕੁੱਲ ਰਕਬਾ",
+    "mean_confidence": "ਔਸਤ ਭਰੋਸਾ",
+    "buildings_detected": "ਇਮਾਰਤਾਂ",
+    "roads_detected": "ਸੜਕ ਨੈੱਟਵਰਕ",
+    "landuse_distribution": "ਜ਼ਮੀਨੀ ਵਰਤੋਂ ਵੰਡ",
+    "confidence_distribution": "ਭਰੋਸਾ ਹਿਸਟੋਗ੍ਰਾਮ"
+  },
+  "compare": {
+    "title": "ਮੌਜੂਦਾ GIS ਰਿਕਾਰਡ ਨਾਲ ਤੁਲਨਾ",
+    "matched": "ਮਿਲਦੇ",
+    "changed": "ਬਦਲੇ ਹੋਏ",
+    "new": "ਨਵੇਂ (ਕੇਵਲ ਏਆਈ)",
+    "missing": "ਗੁੰਮ (ਕੇਵਲ ਜੀਆਈਐਸ)",
+    "swipe_toggle": "ਸਵਾਈਪ ਪਰਦਾ ਟੌਗਲ ਕਰੋ",
+    "iou": "IoU",
+    "area_diff": "ਰਕਬਾ ਅੰਤਰ",
+    "displacement": "ਖਿਸਕਾਅ"
+  },
+  "accuracy": {
+    "title": "ਸਥਾਨਿਕ ਅਤੇ ਸ਼ੁੱਧਤਾ ਮਾਪਦੰਡ",
+    "gnss_rmse": "GNSS RMSE",
+    "mean_horizontal_error": "ਔਸਤ ਲੇਟਵੀਂ ਗ਼ਲਤੀ",
+    "building_iou": "ਇਮਾਰਤ IoU",
+    "building_f1": "ਇਮਾਰਤ F1",
+    "parcel_iou": "ਪਾਰਸਲ IoU",
+    "parcel_f1": "ਪਾਰਸਲ F1",
+    "correct_parcels": "1-ਤੋਂ-1 ਸਹੀ",
+    "merged_parcels": "ਇਕੱਠੇ ਕੀਤੇ",
+    "split_parcels": "ਵੰਡੇ ਟੁਕੜੇ"
+  },
+  "context": {
+    "title": "ਗੂਗਲ ਅਰਥ ਇੰਜਣ ਸੰਦਰਭ",
+    "status": "GEE ਸਥਿਤੀ",
+    "enabled": "ਜੁੜਿਆ ਹੋਇਆ",
+    "disabled": "ਬੰਦ",
+    "open_buildings": "Google Open Buildings ਬੈਂਚਮਾਰਕ",
+    "dynamic_world": "Dynamic World 10m ਅਨੁਮਾਨ",
+    "sentinel_composite": "Sentinel-2 ਤਸਵੀਰ"
+  },
+  "upload": {
+    "title": "ਪ੍ਰੋਜੈਕਟ ਡਾਟਾ ਤੇ ਰਨ",
+    "select_project": "ਪ੍ਰੋਜੈਕਟ ਚੁਣੋ",
+    "create_project": "ਨਵਾਂ ਪ੍ਰੋਜੈਕਟ ਬਣਾਓ",
+    "project_name": "ਪ੍ਰੋਜੈਕਟ ਨਾਮ",
+    "crs": "ਪ੍ਰੋਜੈਕਸ਼ਨ (CRS)",
+    "ori_label": "ORI GeoTIFF",
+    "dsm_label": "DSM GeoTIFF",
+    "dtm_label": "DTM GeoTIFF (ਵਿਕਲਪਿਕ)",
+    "parcels_label": "ਮੌਜੂਦਾ ਪਾਰਸਲ (ਵਿਕਲਪਿਕ)",
+    "gt_label": "GNSS ਪੁਆਇੰਟ (ਵਿਕਲਪਿਕ)",
+    "upload_btn": "ਅੱਪਲੋਡ ਤੇ ਤਿਆਰ ਕਰੋ",
+    "run_pipeline": "ਏਆਈ ਪਾਈਪਲਾਈਨ ਚਲਾਓ",
+    "pipeline_running": "ਡਰੋਨ ਡਾਟਾ ਪ੍ਰੋਸੈਸ ਹੋ ਰਿਹਾ ਹੈ..."
+  },
+  "export": {
+    "title": "ਨਿਰਯਾਤ ਤੇ ਰਿਪੋਰਟਾਂ",
+    "geojson": "GeoJSON ਡਾਟਾਸੈੱਟ",
+    "gpkg": "GeoPackage (.gpkg)",
+    "shp": "Shapefile (.zip)",
+    "kml": "Google Earth KML (.kml)",
+    "pdf_report": "ਅਧਿਕਾਰਤ PDF ਸਰਵੇਖਣ ਰਿਪੋਰਟ",
+    "download": "ਡਾਊਨਲੋਡ"
+  }
+}

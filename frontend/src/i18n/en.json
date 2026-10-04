@@ -1,0 +1,121 @@
+{
+  "app_title": "ParcelAI",
+  "app_subtitle": "AI-Based Automated Cadastral & Urban Parcel Mapping",
+  "preliminary_warning": "Preliminary output — subject to field verification and not for legal or cadastral transfer.",
+  "system_status": "System Status",
+  "api_unreachable": "API unreachable",
+  "navigation": {
+    "layers": "Layers",
+    "issues": "Issues",
+    "review_queue": "Review Queue",
+    "stats": "Dashboard & Stats",
+    "compare": "GIS Compare",
+    "accuracy": "Accuracy",
+    "context": "GEE Context",
+    "upload": "Upload & Run",
+    "export": "Export"
+  },
+  "layers": {
+    "title": "Layer Management",
+    "basemap": "Basemap",
+    "drone_rasters": "Drone Imagery & Elevation",
+    "ai_vectors": "AI Extracted Features",
+    "cadastral_rules": "Cadastral Rules & Topology",
+    "ground_truth": "Ground Truth & GNSS",
+    "context": "Earth Engine Context",
+    "opacity": "Opacity",
+    "terrain_3d": "3D Terrain Elevation"
+  },
+  "issues": {
+    "title": "Topology Validation & Encroachments",
+    "found": "Issues Found",
+    "autofix": "Auto-Repair Topology",
+    "filter_all": "All",
+    "filter_error": "Errors",
+    "filter_warning": "Warnings",
+    "filter_info": "Info",
+    "resolved": "Resolved",
+    "unresolved": "Unresolved",
+    "mark_resolved": "Mark Resolved",
+    "reopen": "Re-open",
+    "suggested_fix": "Suggested Fix",
+    "zoom_to": "Zoom"
+  },
+  "review": {
+    "title": "Parcel Review Queue",
+    "desc": "Parcels ordered by AI confidence ascending for surveyor QA/QC verification.",
+    "confidence": "Confidence",
+    "area": "Area",
+    "status": "Status",
+    "source": "Source",
+    "verify": "Verify Parcel",
+    "flag_edit": "Flag for Edit",
+    "inspect": "Inspect"
+  },
+  "stats": {
+    "title": "Cadastral Survey Analytics",
+    "total_parcels": "Total Parcels",
+    "total_area": "Total Area",
+    "mean_confidence": "Mean Confidence",
+    "buildings_detected": "Buildings",
+    "roads_detected": "Road Networks",
+    "landuse_distribution": "Land-Use Breakdown",
+    "confidence_distribution": "Confidence Histogram"
+  },
+  "compare": {
+    "title": "Cadastral GIS Comparison",
+    "matched": "Matched",
+    "changed": "Changed",
+    "new": "New (AI Only)",
+    "missing": "Missing (GIS Only)",
+    "swipe_toggle": "Toggle Swipe Curtain",
+    "iou": "IoU",
+    "area_diff": "Area Diff",
+    "displacement": "Shift"
+  },
+  "accuracy": {
+    "title": "Positional & Polygon Accuracy",
+    "gnss_rmse": "GNSS Positional RMSE",
+    "mean_horizontal_error": "Mean Horizontal Error",
+    "building_iou": "Building Footprint IoU",
+    "building_f1": "Building F1 Score",
+    "parcel_iou": "Parcel Polygon IoU",
+    "parcel_f1": "Parcel F1 Score",
+    "correct_parcels": "1-to-1 Correct",
+    "merged_parcels": "Merged Clusters",
+    "split_parcels": "Split Fragments"
+  },
+  "context": {
+    "title": "Google Earth Engine Public Context",
+    "status": "GEE Status",
+    "enabled": "Connected",
+    "disabled": "Not Configured",
+    "open_buildings": "Google Open Buildings Benchmark",
+    "dynamic_world": "Dynamic World 10m Prior",
+    "sentinel_composite": "Sentinel-2 Cloudless Composite"
+  },
+  "upload": {
+    "title": "Project Ingest & Pipeline Runner",
+    "select_project": "Select Project",
+    "create_project": "Create New Project",
+    "project_name": "Project Name",
+    "crs": "Project CRS",
+    "ori_label": "Orthorectified Imagery (ORI GeoTIFF)",
+    "dsm_label": "Digital Surface Model (DSM GeoTIFF)",
+    "dtm_label": "Digital Terrain Model (DTM GeoTIFF - Optional)",
+    "parcels_label": "Existing Parcels (GeoJSON/SHP/GPKG - Optional)",
+    "gt_label": "GNSS / Ground Truth Points (Optional)",
+    "upload_btn": "Upload & Prepare Rasters",
+    "run_pipeline": "Execute AI Pipeline",
+    "pipeline_running": "Processing Drone Data..."
+  },
+  "export": {
+    "title": "GIS Exports & Survey Reports",
+    "geojson": "GeoJSON Dataset",
+    "gpkg": "GeoPackage Multi-Layer (.gpkg)",
+    "shp": "Shapefile Bundle (.zip)",
+    "kml": "Google Earth KML (.kml)",
+    "pdf_report": "Official PDF Survey Report",
+    "download": "Download"
+  }
+}
